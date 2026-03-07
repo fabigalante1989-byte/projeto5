@@ -15,7 +15,7 @@ if graph_button:
     st.write('Criando o gráfico de dispersão sobre lesões fatais em acidentes aéreos')
     #criando gráfico de dispersão
     dados_lesoes = dados[dados['lesoes_fatais'] > 0]
-    fig1 = px.scatter(dados_lesoes, x='data_da_ocorrencia', y='lesoes_fatais', color='tipo_de_operacao', labels={'data_da_ocorrencia': 'Ano da ocorrência', 'lesoes_fatais': 'Número de lesões fatais', 'tipo_de_operacao':'Tipo de operação'}, title='Quantidade de lesões fatais em acidentes aéreos por ano', range_x=[2000, 2024], rangey=[0, dados_lesoes['lesoes_fatais'].max() + 10])
+    fig1 = px.scatter(dados_lesoes, x='data_da_ocorrencia', y='lesoes_fatais', color='tipo_de_operacao', labels={'data_da_ocorrencia': 'Ano da ocorrência', 'lesoes_fatais': 'Número de lesões fatais', 'tipo_de_operacao':'Tipo de operação'}, title='Quantidade de lesões fatais em acidentes aéreos por ano', range_x=[2000, 2024], range_y=[0, dados_lesoes['lesoes_fatais'].max() + 10])
     st.plotly_chart(fig1)
 
 # Criando seletor múltiplo de regiões
