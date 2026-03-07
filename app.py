@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # Lendo os dados
-dados = pd.read_csv('C:/Users/fabi_/projeto5/notebooks/dados_tratados.csv')
+dados = pd.read_csv('dados_tratados.csv')
 
 # Cabeçalho
 st.header('Análise de dados de acidentes aéreos entre os anos de 2000 e 2024')
